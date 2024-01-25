@@ -87,13 +87,17 @@ header nav ul li {
 /*ESTILO TOPO DO SITE*/
 
 section.top-site {
-    padding: 150px 4%;
+    padding: 40px 4%;
 }
 
 section.top-site .flex {
     align-items: center;
-    justify-content: center;
-    gap: 225px;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+section.top-site .txt-top-site {
+    max-width: 100%;
 }
 
 .top-site h1 {
@@ -101,7 +105,6 @@ section.top-site .flex {
     font-size: 42px;
     line-height: 40px;
     width: 600px;
-    margin-bottom: 20px;
 }
 
 .top-site .txt-top-site h1 span {
@@ -111,7 +114,7 @@ section.top-site .flex {
 .top-site .txt-top-site p {
     color: #FFFFFF;
     width: 500px;
-    margin-bottom: 50px;
+    margin: 40px 0;
 }
 
 .top-site .img-top-site img {
@@ -333,4 +336,61 @@ footer .line-footer p a {
 footer .line-footer .created {
     color: #FFFFFF;
     margin-left: 50%;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px) {
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .top-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /*Header*/
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /*TOP SITE*/
+
+    section.top-site {
+        padding: 20px 8%;
+    }
+
+    .top-site h1 {
+        color: #FFFFFF;
+        font-size: 30px;
+        width: 350px;
+    }
+
+    .top-site .txt-top-site p {
+        color: #FFFFFF;
+        width: 350px;
+    }
+
+    /*ESTILO TECNOLOGIAS*/
+
+    section.tecnologias {
+        padding: 40px 8%;
+    }
+
+    /*ESTILO SOBRE */
+
+    section.sobre .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
 }
