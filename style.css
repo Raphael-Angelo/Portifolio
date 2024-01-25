@@ -175,7 +175,7 @@ section.sobre .flex {
 
 section.sobre .img-sobre img {
     height: 300px;
-    width: auto;
+    border-radius: 20px;
 }
 
 .sobre .txt-sobre {
@@ -219,10 +219,42 @@ section.portifolio {
 
 section.portifolio .flex {
     justify-content: space-around;
+    margin-top: 60px;
 }
 
 .img-port {
     width: 360px;
     height: 460px;
-    background-color: #00ff08;
+    background-size: cover;
+    background-position: 50% 0%;
+    transition: 1s;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
