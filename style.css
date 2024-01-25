@@ -198,7 +198,7 @@ section.sobre .img-sobre img {
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -303,4 +303,34 @@ form .btn-enviar input {
     font-weight: 700;
     cursor: pointer;
     transition: .3s;
+}
+
+/* ESTILO DO FOOTER  */
+
+footer {
+    padding: 40px 4% 0;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    display: flow-root;
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #FFFFFF;
+}
+
+footer .line-footer .created {
+    color: #FFFFFF;
+    margin-left: 50%;
 }
